@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script>
+        function showAppleDescription() {
+        document.getElementById("Education").style.display = "block";
+        document.getElementById("apprenticeship").style.display = "none";
+        document.getElementById("organization").style.display = "none";
+        }
+        
+        function showApprenticeshipDescription() {
+          document.getElementById("Education").style.display = "none";
+          document.getElementById("apprenticeship").style.display = "block";
+          document.getElementById("organization").style.display = "none"; 
+        }
+      
+        function showOrganizationDescription() {
+          document.getElementById("Education").style.display = "none";
+          document.getElementById("apprenticeship").style.display = "none"; 
+          document.getElementById("organization").style.display = "block";
+        }
+      </script>
+      
+      <style>
+        #Education, #apprenticeship, #organization {
+          display: none;
+        }
+        #footer {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+      </style>
+      
+      
+</head>
+<body class="bg-violet-950 text-violet-300">
+    <header class="z-10 sticky top-0 bg-violet-950 py-5"> <!--Header-->
+        <nav class="w-9/12 flex flex-row mx-auto">
+            <div class="uppercase text-lg basis-1/4"> <!--Logo-->
+                <a href="#hero">
+                    <span class="font-extrabold text-white">Gusde</span>
+                    <span class="font-extralight text-blue-500">bagus</span>
+                </a>
+            </div>
+            <div class="basis-1/2 flex items-center justify-evenly"> <!--Link-->
+                <a class = "hover:bg-blue-500 hover:text-blue-900 bg-white w-100 px-3 rounded-lg text-blue-800" href="#about"><span>About</span></a>
+                <a class = "hover:bg-blue-500 hover:text-blue-900 bg-white w-100 px-3 rounded-lg text-blue-800" href="#services"><span>Services</span></a>
+                <a class = "hover:bg-blue-500 hover:text-blue-900 bg-white w-100 px-3 rounded-lg text-blue-800" href="#portfolio"><span>Portfolios</span></a>
+                <a class = "hover:bg-blue-500 hover:text-blue-900 bg-white w-100 px-3 rounded-lg text-blue-800" href="#experiences"><span>Experiences</span></a>
+            </div>
+        </nav>
+    </header>
+
+    <main id="hero" class="relative -top-20"> <!--Main-->
+        <div class="  bg-violet-950"> <!--hero section-->
+            <div class="mx-auto flex h-screen items-center w-9/12">
+                <div class="basis-1/2"> <!---deskripsi-->
+                    <div class="flex items-center">
+                        <svg class="stroke-gray-300 stroke-2 h-5 w-5">
+                            <line x1="0" y1="10px" x2="10" y2="10px"/>
+                        </svg>
+                        <h2 class="uppercase text-xs font-extralight tracking-spasijauh">
+                            this is me
+                        </h2>
+                    </div>
+                    <h3 class="font-bold text-4xl text-white">
+                        <span>Gede Bagus</span>
+                        <span class="text-blue-500">Nugraha</span>
+                    </h3>
+                    <p class="font-light">
+                        An ordinary student who has basic computers and networks, 
+                        who wants to learn about many things.
+                    </p>
+                    <div class="flex flex-row mt-5 space-x-3">
+                        <a href="https://instagram.com/debagusn?igshid=OGQ5ZDc2ODk2ZA=="><img class="w-6 h-6"src="img/Instagram.svg" alt=""></a>
+                        <a href="https://github.com/GedeBagusNugraha"><img class="w-6 h-6"src="img/Github.svg" alt=""></a>
+                        <a href="https://twitter.com/debagusn?t=ssIlz7uCu0U-UGqUVe1yVw&s=09"><img class="w-6 h-6"src="img/Twitter.svg" alt=""></a>
+                        <a href=""><img class="w-6 h-6"src="img/Linkedin.svg" alt=""></a>
+                    </div>
+                </div>
+                <div class="basis-1/2"> <!---foto-->
+                    <img class="mx-auto" src="img/Gusv.png" alt="miawmiawmiaw">
+                </div>
+            </div>
+        </div>
+
+    <div id="about" class="bg-violet-950"> <!--hero section-->
+        <div class="mx-auto flex h-screen items-center w-9/12">
+            <div class="basis-1/2"> <!---deskripsi-->
+                <div class="flex items-center">
+                    <svg class="stroke-gray-300 stroke-2 h-5 w-5">
+                        <line x1="0" y1="10px" x2="10" y2="10px"/>
+                    </svg>
+                    <h2 class="text-blue-500 uppercase text-xs font-extralight tracking-spasijauh">
+                        getting closer
+                    </h2>
+                </div>
+                <h3 class="text-3xl">
+                    <span>About Me</span>
+                </h3>
+                <div class="bg-white  py-5 px-5  flex flex-col items-center gap-6 rounded-lg">
+                    <p class="font-sans font-semibold text-primary text-xs uppercase">Identity :</p>
+                    <h3 class="font-sans font-medium text-gray-500 text-lg" >Name : Gede Bagus Nugraha</h3>
+                    <h3 class="font-sans font-medium text-gray-500 text-lg" >NIM : 2215101019</h3>
+                    <h3 class="font-sans font-medium text-gray-500 text-lg" >Class : Reguler - A</h3>
+                </div>
+                <br>
+                <div class="bg-white  py-5 px-5  flex flex-col items-center gap-6 rounded-lg">
+                    <p class="font-sans font-semibold text-primary text-xs uppercase">hobby :</p>
+                    <h3 class="font-sans font-medium text-gray-500 text-lg" >Playing Football</h3>
+                    <h3 class="font-sans font-medium text-gray-500 text-lg" >Playing Game</h3>
+                    <h3 class="font-sans font-medium text-gray-500 text-lg" >Listening Music</h3>
+                </div>
+            </div>
+            <div class="basis-1/2"> <!---foto-->
+                <img class="mx-auto" src="img/Aboutme.png" alt="miawmiawmiaw">
+            </div>
+        </div>
+    </div>
+
+    <div id="services" class="bg-violet-950 pt-20 pb-20"> <!-- services -->
+			<div class="w-9/12 mx-auto">
+				<div class="flex flex-col place-items-center"> <!-- judul -->
+					<div>
+						<div class="flex items-center">
+							<svg class="stroke-gray-400 stroke-2 h-5 w-5">
+								<line x1="0" y1="10px" x2="10px" y2="10px"/>
+							</svg>
+							<h2 class="text-blue-500 uppercase text-xs font-extralight tracking-spasijauh">
+								services
+							</h2>
+						</div>
+						<h3 class="text-3xl">Specialized in</h3>
+					</div>
+				</div>
+
+                <div class="py-5 px-5 flex flex-col gap-3 rounded-lg"> <!-- kotak kotak servis -->
+					<div class="rounded-lg bg-white shadow-lg">
+						<div class="flex flex-col items-center py-10 px-10">
+							<div class="h-10 w-10 p-2 bg-blue-100 rounded-2xl">
+								<img class="w-full" src="img/WP.svg" alt="">
+							</div>
+							<h4 class="text-black mt-5">
+								UI/UX Design
+							</h4>
+							<p class="text-center font-extralight text-sm mt-2 text-gray">
+								Put existing ideas into use to make it something special.
+							</p>
+						</div>
+					</div>
+					<div class="rounded-lg bg-white shadow-lg">
+						<div class="flex flex-col items-center py-10 px-10">
+							<div class="h-10 w-10 p-2 bg-blue-100 rounded-2xl">
+								<img class="w-full " src="img/Com.svg" alt="">
+							</div>
+							<h4 class="text-black mt-5">
+								Computers Engineering
+							</h4>
+							<p class="text-center font-extralight text-sm mt-2 text-gray">
+								Simple things like repairing and assembling computers. I can also act as a consultant if you want to build your dream computer.
+							</p>
+						</div>
+					</div>
+					<div class="rounded-lg bg-white shadow-lg">
+						<div class="flex flex-col items-center py-10 px-10">
+							<div class="h-10 w-10 p-2 bg-blue-100 rounded-2xl">
+								<img class="w-full" src="img/intrnt.svg" alt="">
+							</div>
+							<h4 class="text-black mt-5 text-center">
+								Network Troubleshooting
+							</h4>
+							<p class="text-center font-extralight text-sm mt-2 text-gray">
+								Like my previous basic education which always revolved 
+                                around network problems and was required to fix them as soon as possible.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+        <div id="portfolio" class="py-20 bg-violet-950"> <!--Portfolio-->
+            <div class="w-9/12 mx-auto">
+                <div class="flex flex-col place-items-end"> <!-- judul -->
+					<div>
+						<div class="flex items-center">
+							<svg class="stroke-gray-400 stroke-2 h-5 w-5">
+								<line x1="0" y1="10px" x2="10px" y2="10px"/>
+							</svg>
+							<h2 class="text-blue-500 uppercase text-xs font-extralight tracking-spasijauh">
+								my works
+							</h2>
+						</div>
+						<h3 class="text-3xl text-white">Featured Portfolios</h3>
+					</div>
+				</div>
+                <div class="py-5 px-5 flex flex-col gap-10 rounded-lg"> <!--kartu portofolio-->
+                    <div class="bg-violet-950 py-5 px-5 flex flex-col gap-6 rounded-lg">
+                        <img 
+                            class="object-cover h-40 opacity-100"
+                            src="img/webpage.png" alt="">
+                        <div class="bg-white py-2 px-4">
+                            <h4 class="text-sm font-medium text-gray-800">Portfolio Project</h4>
+                            <h5 class="text-sm font-mono">TailwindCSS</h5>
+                        </div>
+                    </div>
+
+                    <div class="bg-violet-950 py-5 px-5 flex flex-col gap-6 rounded-lg">
+                        <img 
+                            class="object-cover h-40 opacity-100"
+                            src="img/logo kabupaten buleleng bali.png" alt="">
+                        <div class="bg-white py-2 px-4">
+                            <h4 class="text-sm font-medium text-gray-800">Dinas Kominfosanti</h4>
+                            <h5 class="text-sm font-mono">Internship Students</h5>
+                        </div>
+                    </div>
+
+                    <div class="bg-violet-950 py-5 px-5 flex flex-col gap-6 rounded-lg">
+                        <img 
+                            class="object-cover h-40 opacity-100"
+                            src="img/Tweak7.jpg" alt="">
+                        <div class="bg-white py-2 px-4">
+                            <h4 class="text-sm font-medium text-gray-800">PAT FTK</h4>
+                            <h5 class="text-sm font-mono">Public Relations TWEAK7</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="experiences" class="bg-violet-950 py-40"> <!-- experiences -->
+			<div class="mx-auto w-9/12 flex flex-row items-center">
+				<div class="basis-1/3">
+					<div class="flex flex-col"> <!-- judul -->
+						<div class="flex items-center">
+							<svg class="stroke-blue-500 stroke-2 h-5 w-5">
+								<line x1="0" y1="10px" x2="10px" y2="10px"/>
+							</svg>
+							<h2 class="text-blue-500 uppercase text-xs font-extralight tracking-spasijauh">
+								career path
+							</h2>
+						</div>
+						<h3 class="text-3xl text-white">Experiences</h3>
+
+						<div class="flex flex-col gap-y-5 mt-10 pr-20">
+							<a class = "hover:bg-blue-500 hover:text-blue-900 flex flex-row justify-between bg-white w-full p-4 rounded-lg text-blue-800" href="#Education" onclick="showAppleDescription()"><span>Education</span> > </a>
+							<a class = "hover:bg-blue-500 hover:text-blue-900 flex flex-row justify-between bg-white w-full p-4 rounded-lg text-blue-800" href="#apprenticeship" onclick="showApprenticeshipDescription()"><span>Apprenticeship</span> > </a>
+							<a class = "hover:bg-blue-500 hover:text-blue-900 flex flex-row justify-between bg-white w-full p-4 rounded-lg text-blue-800" href="#organization"onclick="showOrganizationDescription()"><span>Organization</span> > </a>
+						</div>
+					</div>
+
+				</div>
+
+				<div id="Education" class="flex flex-col ">
+					<h4 class="text-2xl font-bold text-gray-200">SMK Negeri 3 Singaraja</h4>
+					<h5 class="text-sm font-light">Singaraja, Bali</h5>
+					<p class="mt-5 text-light text-gray-200">July 2019 - June 2022 : Student</p> <br>
+                    <h4 class="text-2xl font-bold text-gray-200">Universitas Pendidikan Ganesha</h4>
+					<h5 class="text-sm font-light">Singaraja, Bali</h5>
+					<p class="mt-5 text-light text-gray-200">Agustus 2022 - Present : Student</p>
+				</div>
+                <div id="apprenticeship" class="flex flex-col">
+					<h4 class="text-2xl font-bold text-gray-200">Dinas Kominfosanti</h4>
+					<h5 class="text-sm font-light">Singaraja, Bali</h5>
+					<p class="mt-5 text-light text-gray-200">December 2020 - March 2021 : Internship Students</p>
+				</div>
+                <div id="organization" class="flex flex-col">
+					<h4 class="text-2xl font-bold text-gray-200">Engineering and Vocational Faculty End of Year Performance</h4>
+					<h5 class="text-sm font-light">Singaraja, Bali</h5>
+					<p class="mt-5 text-light text-gray-200">September 2022 - December 2022 : Public Relations</p>
+				</div>
+			</div>
+		</div>
+    </main>
+
+    <footer class="bg-white text-center pt-10 pb-10 font-mono -mt-20"> <!--footer-->
+		2023 GusdeBagus. All rights reserved
+    </footer>
+</body>
+</html>
