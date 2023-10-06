@@ -42,16 +42,16 @@
           <table class="border-collapse border-2 border-white mt-4">
             <thead>
               <tr>
-                <th class="border border-white p-2">Nama Item</th>
-                <th class="border border-white p-2">Harga</th>
-                <th class="border border-white p-2">Jumlah</th>
-                <th class="border border-white p-2">Aksi</th>
+                <th class="border border-white text-white p-2">Nama Item</th>
+                <th class="border border-white text-white p-2">Harga</th>
+                <th class="border border-white text-white p-2">Jumlah</th>
+                <th class="border border-white text-white p-2">Aksi</th>
               </tr>
             </thead>
             <tbody>
               <tr v-for="(item, index) in selectedItems" :key="index">
-                <td class="border border-white p-2">{{ item.name }}</td>
-                <td class="border border-white p-2">Rp {{ item.price }}</td>
+                <td class="border border-white text-white p-2">{{ item.name }}</td>
+                <td class="border border-white text-white p-2">Rp {{ item.price }}</td>
                 <td class="border border-white p-2">
                   <input v-model="item.quantity" type="number" class="w-16 p-2 border border-gray-300 rounded" @input="calculateTotal" />
                 </td>
