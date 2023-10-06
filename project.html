@@ -84,7 +84,6 @@
             <button @click="hideSuccessPopup" class="bg-blue-600 text-white px-4 py-2 rounded mt-4">Tutup</button>
           </div>
         </div>
-        <!-- /Popup Pesan -->
       </div>
 
       <div v-if="showItemImage" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-75">
@@ -101,19 +100,19 @@
       el: '#app',
       data: {
         items: [
-          { name: 'Manchester United (home kit)', price: 1000, image: 'https://images.footballfanatics.com/manchester-united/manchester-united-adidas-home-shirt-2023-24_ss5_p-//images.footballfanatics.com/manchester-united/manchester-united-adidas-home-shirt-2023-24_ss5_p-13384987+u-maqghunllnf49d60lev2+v-dknuadglihvbhgyevpq4.jpg?_hv=2&w=150+u-maqghunllnf49d60lev2+v-dknuadglihvbhgyevpq4.jpg?_hv=2&w=150', quantity: 0, canBuy: true, purchased: false },
-          { name: 'Indonesia (home kit)', price: 2000, image: 'https://lzd-img-global.slatic.net/g/p/b6eacde66afafb2ce528f51977a20c8d.jpg_150x150q80.jpg_.webp', quantity: 0, canBuy: true, purchased: false },
-          { name: 'Indonesia (third kit)', price: 1500, image: 'https://lzd-img-global.slatic.net/g/p/32be53111466bbd62c20d824bdd60b06.jpg_150x150q80.jpg_.webp', quantity: 0, canBuy: true, purchased: false },
-          { name: 'Manchester United (third kit)', price: 2500, image: 'https://images.footballfanatics.com/manchester-united/manchester-united-adidas-third-shirt-2023-24_ss5_p-13384975+u-eykanbxlgkfmzfw9wvfp+v-gatiowyxusvh7oa2wimp.jpg?_hv=2&w=150', quantity: 0, canBuy: true, purchased: false },
-          { name: 'Liverpool (home kit)', price: 1800, image: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDKB9TSM4nJXJLzh3ncsj0ZI5Nsi0hBiGlCa97blQEV93Ji45ZmaNlrnOP9S0c9fScluV4766_Nk8KAhnl_7VBHdmHtDQvkZ56qx2YY3a8j1ft9LujmaRIq0guuGfHAj-V3CeWmpESJcBR4XCPYg_QJen63nOGJ8uuNi12EskBsB9LaAL0duTiCRVV/s150/liverpool-23-24-home-kit%20(1).jpg', quantity: 0, canBuy: true, purchased: false },
-          { name: 'Real Madrid (home kit)', price: 3000, image: 'https://uk.shop.realmadrid.com/cdn/shop/products/RMCFMZ0127_01_150x150.jpg?v=1685530063', quantity: 0, canBuy: true, purchased: false }
+          { name: 'Manchester United (home kit)', price: 150000, image: 'https://images.footballfanatics.com/manchester-united/manchester-united-adidas-home-shirt-2023-24_ss5_p-//images.footballfanatics.com/manchester-united/manchester-united-adidas-home-shirt-2023-24_ss5_p-13384987+u-maqghunllnf49d60lev2+v-dknuadglihvbhgyevpq4.jpg?_hv=2&w=150+u-maqghunllnf49d60lev2+v-dknuadglihvbhgyevpq4.jpg?_hv=2&w=150', quantity: 0, canBuy: true, purchased: false },
+          { name: 'Indonesia (home kit)', price: 100000, image: 'https://lzd-img-global.slatic.net/g/p/b6eacde66afafb2ce528f51977a20c8d.jpg_150x150q80.jpg_.webp', quantity: 0, canBuy: true, purchased: false },
+          { name: 'Indonesia (third kit)', price: 100000, image: 'https://lzd-img-global.slatic.net/g/p/32be53111466bbd62c20d824bdd60b06.jpg_150x150q80.jpg_.webp', quantity: 0, canBuy: true, purchased: false },
+          { name: 'Manchester United (third kit)', price: 150000, image: 'https://images.footballfanatics.com/manchester-united/manchester-united-adidas-third-shirt-2023-24_ss5_p-13384975+u-eykanbxlgkfmzfw9wvfp+v-gatiowyxusvh7oa2wimp.jpg?_hv=2&w=150', quantity: 0, canBuy: true, purchased: false },
+          { name: 'Liverpool (home kit)', price: 180000, image: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDKB9TSM4nJXJLzh3ncsj0ZI5Nsi0hBiGlCa97blQEV93Ji45ZmaNlrnOP9S0c9fScluV4766_Nk8KAhnl_7VBHdmHtDQvkZ56qx2YY3a8j1ft9LujmaRIq0guuGfHAj-V3CeWmpESJcBR4XCPYg_QJen63nOGJ8uuNi12EskBsB9LaAL0duTiCRVV/s150/liverpool-23-24-home-kit%20(1).jpg', quantity: 0, canBuy: true, purchased: false },
+          { name: 'Real Madrid (home kit)', price: 300000, image: 'https://uk.shop.realmadrid.com/cdn/shop/products/RMCFMZ0127_01_150x150.jpg?v=1685530063', quantity: 0, canBuy: true, purchased: false }
         ],
         selectedItems: [],
         showItemImage: null,
         showEditModal: false,
         editedItemIndex: null,
         editedItemQuantity: 0,
-        showSuccessPopup: false, // Menambahkan data untuk popup pesan
+        showSuccessPopup: false,
       },
       computed: {
         total: function() {
